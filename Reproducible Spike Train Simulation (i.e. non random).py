@@ -1,15 +1,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
-
 np.random.seed(42)
-
 duration = 1 
 firing_rate = 10 
 n_spikes = np.random.poisson(firing_rate * duration)
-
 #Spike times
 spike_times = np.sort(np.random.rand(n_spikes) * duration)
-
 print("Spike times:", spike_times)
 
 # Ploting raster plot
