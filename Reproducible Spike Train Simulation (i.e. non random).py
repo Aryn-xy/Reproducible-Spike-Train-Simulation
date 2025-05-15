@@ -1,15 +1,13 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Set a random seed for reproducibility
 np.random.seed(42)
 
-# Simulate 1 second of neural activity
 duration = 1 
-firing_rate = 10  # spikes per second (Hz)
+firing_rate = 10 
 n_spikes = np.random.poisson(firing_rate * duration)
 
-# Spike times
+#Spike times
 spike_times = np.sort(np.random.rand(n_spikes) * duration)
 
 print("Spike times:", spike_times)
@@ -20,7 +18,7 @@ plt.xlabel("Time (s)")
 plt.title("Simulated Spike Train")
 plt.show()
 
-# Calculate Inter-Spike Intervals (ISI)
+#Calculating ISI
 isi = np.diff(spike_times)
 plt.hist(isi, bins=10, color='skyblue', edgecolor='black')
 plt.xlabel("Inter-Spike Interval (s)")
