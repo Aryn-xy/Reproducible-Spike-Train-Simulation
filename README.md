@@ -6,3 +6,8 @@ This project simulates neural spike train data randomly using a Poisson process,
 - **Simulated Spike Train**: Generates random spike times based on a Poisson process with a fixed random seed for reproducibility.
 - **ISI Histogram**: Visualizes the distribution of time intervals between spikes.
 - **Firing Rate Calculation**: Estimates the firing rate based on simulated spikes.
+## Sample Output
+### Raster Plot
+![Raster Plot](raster_plot.png)
+### ISI Histogram
+![ISI Histogram](ISI_Histogram.png)
